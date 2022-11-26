@@ -64,6 +64,7 @@ feedbackRouter.put('/updateupvote', async (req: Request, res: Response) => {
       upvotes: upvotes,
     }
   );
+  res.send({ status: 200, success: true });
 });
 
 feedbackRouter.delete(
