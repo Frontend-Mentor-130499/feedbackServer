@@ -6,7 +6,6 @@ import { Express } from 'express';
 import cors from 'cors';
 
 import feedbackRouter from './routes/feedback';
-import userRouter from './routes/user';
 
 dotenv.config();
 
@@ -27,8 +26,6 @@ main().then(() => {
   app.use(bodyParser.json());
 
   app.use(cors());
-
-  app.use('/user', userRouter);
 
   app.use('/feedback', feedbackRouter);
 

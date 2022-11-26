@@ -1,4 +1,5 @@
-const feedbackRouter = require('express').Router();
+import express from 'express';
+const feedbackRouter = express.Router();
 import { Request, Response } from 'express';
 import { productModel } from '../models/index';
 
